@@ -7,10 +7,9 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "NODE_ENV=test tape test | faucet",
     "lint": "lynt",
     "prettier": "prettier --no-semi --single-quote --write '**/*.js'",
-    "test": "NODE_ENV=test tape test | faucet",
     "testV": "NODE_ENV=test tape test"
   },
   "repository": {
@@ -25,6 +24,7 @@
   "homepage": "https://github.com/tripott/apigee-mass-sdk#readme",
   "dependencies": {
     "dotenv": "^6.2.0",
+    "isomorphic-fetch": "^2.2.1",
     "ramda": "^0.26.1",
     "totp-generator": "0.0.6"
   },
