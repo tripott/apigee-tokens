@@ -1,0 +1,37 @@
+{
+  "name": "apigee-mass-sdk",
+  "version": "1.0.0",
+  "description": "A repo to hold apigee scripts that manipulate the Apigee APIM API.  Deploy Proxy, promote proxy, deploy product, deploy dev app, security/create oauth tokens",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "lynt",
+    "prettier": "prettier --no-semi --single-quote --write '**/*.js'",
+    "test": "NODE_ENV=test tape test | faucet",
+    "testV": "NODE_ENV=test tape test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tripott/apigee-mass-sdk.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tripott/apigee-mass-sdk/issues"
+  },
+  "homepage": "https://github.com/tripott/apigee-mass-sdk#readme",
+  "dependencies": {
+    "dotenv": "^6.2.0",
+    "ramda": "^0.26.1",
+    "totp-generator": "0.0.6"
+  },
+  "devDependencies": {
+    "faucet": "0.0.1",
+    "lynt": "^0.5.5",
+    "prettier": "^1.16.4",
+    "tape": "^4.10.1"
+  }
+}
