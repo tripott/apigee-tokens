@@ -1,7 +1,7 @@
 {
   "name": "apigee-mass-sdk",
   "version": "1.0.0",
-  "description": "Scripts that manipulate the Apigee APIM API.  Security/MFA/create oauth tokens",
+  "description": "Scripts that manipulate the Apigee APIM API.  Security/MFA/create oauth tokens.",
   "main": "dist/index.js",
   "directories": {
     "lib": "lib"
