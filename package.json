@@ -1,8 +1,8 @@
 {
   "name": "apigee-mass-sdk",
   "version": "1.0.0",
-  "description": "A repo to hold apigee scripts that manipulate the Apigee APIM API.  Deploy Proxy, promote proxy, deploy product, deploy dev app, security/create oauth tokens",
-  "main": "index.js",
+  "description": "Scripts that manipulate the Apigee APIM API.  Security/MFA/create oauth tokens",
+  "main": "dist/index.js",
   "directories": {
     "lib": "lib"
   },
@@ -10,14 +10,17 @@
     "test": "NODE_ENV=test tape test | faucet",
     "lint": "lynt",
     "prettier": "prettier --no-semi --single-quote --write '**/*.js'",
-    "testV": "NODE_ENV=test tape test"
+    "testV": "NODE_ENV=test tape test",
+    "build": "node build",
+    "prepublish": "npm run lint; npm run prettier;  npm run build"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tripott/apigee-mass-sdk.git"
   },
-  "author": "",
-  "license": "ISC",
+  "keywords": "Apigee MFA 2FA API Management OAuth",
+  "author": "tripott tripott@gmail.com",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/tripott/apigee-mass-sdk/issues"
   },
@@ -31,8 +34,20 @@
   },
   "devDependencies": {
     "faucet": "0.0.1",
+    "husky": "^1.3.1",
     "lynt": "^0.5.5",
     "prettier": "^1.16.4",
     "tape": "^4.10.1"
+  },
+  "engines": {
+    "node": ">=7.8.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn prettier && yarn lint"
+    }
   }
 }
