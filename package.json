@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/tripott/apigee-mass-sdk#readme",
   "dependencies": {
+    "apigeetool": "^0.10.0",
     "dotenv": "^6.2.0",
     "isomorphic-fetch": "^2.2.1",
     "ramda": "^0.26.1",
