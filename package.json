@@ -8,9 +8,9 @@
   },
   "scripts": {
     "test": "NODE_ENV=test tape test | faucet",
+    "testV": "NODE_ENV=test tape test",
     "lint": "lynt",
     "prettier": "prettier --no-semi --single-quote --write '**/*.js'",
-    "testV": "NODE_ENV=test tape test",
     "build": "node build",
     "prepublish": "npm run lint; npm run prettier;  npm run build"
   },
