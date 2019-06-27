@@ -1,5 +1,8 @@
 # apigee-tokens
 
+![npm version](https://img.shields.io/badge/npm-1.0.1-blue.svg) ![Licence MIT](https://img.shields.io/badge/licence-MIT-yellowgreen.svg) ![Open Issues](https://img.shields.io/github/issues-raw/tripott/jwt-bouncer.svg)
+
+
 Promised based functions to create Apigee multi-factor auth tokens and OAuth tokens. Used to access Apigee API Management APIs which are used to automate deployment of API proxies, products, etc. to the Apigee Edge platform.
 
 ## Setup
