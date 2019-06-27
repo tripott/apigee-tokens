@@ -1,6 +1,6 @@
 {
   "name": "apigee-tokens",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Promised based functions to create Apigee multi-factor auth tokens and OAuth tokens. Used to access Apigee API Management APIs.",
   "main": "dist/index.js",
   "directories": {
